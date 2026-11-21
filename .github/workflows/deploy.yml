@@ -1,8 +1,7 @@
-name: Deploy cindyyw.com to GitHub Pages
+name: Legacy GitHub Pages deploy (manual only; site now on Cloudflare)
 
 on:
-  push:
-    branches: [main]
+  # cindyyw.com is served by Cloudflare (see wrangler.jsonc). Kept for manual use only.
   workflow_dispatch:
 
 permissions:

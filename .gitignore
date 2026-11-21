@@ -6,3 +6,5 @@ assets/iCloud Photos/
 node_modules/
 .inspection/
 Thumbs.db
+_site/
+.wrangler/

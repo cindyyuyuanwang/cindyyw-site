@@ -1,0 +1,18 @@
+// Cloudflare deploy for cindyyw.com.
+// Only the public _site folder (built by scripts/stage-site.sh) is uploaded.
+// Deploy: bash scripts/stage-site.sh && npx wrangler deploy
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cindyyw",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./_site",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "cindyyw.com", "custom_domain": true },
+    { "pattern": "www.cindyyw.com", "custom_domain": true }
+  ]
+}

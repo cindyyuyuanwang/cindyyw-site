@@ -5,7 +5,8 @@
   "scripts": {
     "inspect": "node scripts/inspect.mjs",
     "media:audit": "node scripts/build-contact-sheet.mjs",
-    "media:build": "node scripts/build-media.mjs"
+    "media:build": "node scripts/build-media.mjs",
+    "deploy": "bash scripts/stage-site.sh && npx --yes wrangler@4 deploy"
   },
   "devDependencies": {
     "@fontsource-variable/newsreader": "^5.3.0",

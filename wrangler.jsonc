@@ -1,9 +1,10 @@
 // Cloudflare deploy for cindyyw.com.
 // Only the public _site folder (built by scripts/stage-site.sh) is uploaded.
-// Deploy: bash scripts/stage-site.sh && npx wrangler deploy
+// Deploy: npm run deploy  (stages _site, then wrangler deploy)
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "cindyyw",
+  "account_id": "c03e3396a144fe3e0b204f8f9dbb32ec",
   "compatibility_date": "2026-11-01",
   "assets": {
     "directory": "./_site",
